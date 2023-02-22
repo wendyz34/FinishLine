@@ -12,6 +12,12 @@ public class FinishLine {
         int randNum = (int)(Math.random()*6)+1;
         return randNum;
     }
+    public int pos2() {
+    return pos2;
+    }
+    public int pos1() {
+        return pos1;
+    }
     public int determineWin(){
         while(pos1<=10||pos2<=10) {
             int dice = randNum();
@@ -22,7 +28,8 @@ public class FinishLine {
                 pos1++;
             }
             System.out.println("Position 1: " + pos1);
-            if(pos1==10){
+           if(pos1==10){
+                endGame();
                 break;
             }
             //return pos1;
@@ -34,7 +41,8 @@ public class FinishLine {
                 pos2++;
             }
             System.out.println("Position 2: " + pos2);
-            if(pos1==10){
+           if(pos2==10){
+                endGame();
                 break;
             }
         }
@@ -69,16 +77,16 @@ public class FinishLine {
         }
         return pos2;
     }*/
-    public String endGame(){
+    public void endGame(){
         if(pos1==10){
-            return "player 1 wins!";
+            System.out.println( "player 1 wins!");
             //System.exit(0);
         }
         if(pos2==10){
-            return "player 2 wins!";
+            System.out.println("player 2 wins!");
             //System.exit(0);
         }
-        return "tie";
+
     }
 
 }
