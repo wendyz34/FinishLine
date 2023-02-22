@@ -32,7 +32,7 @@ public class FinishLine {
                 endGame();
                 break;
             }
-            //return pos1;
+
             int d1 = randNum();
             int d2 = randNum();
             System.out.println("Dice: " + dice);
@@ -49,34 +49,8 @@ public class FinishLine {
         return pos2;
 
     }
-    /*public int determineWin(){
-        while(pos1!=10) {
-            int dice = randNum();
-            int dice2 = randNum();
-            System.out.println("Dice: " + dice);
-            System.out.println("Dice2: " + dice);
-            if (dice + dice2 == pos1||dice==pos1||dice2==pos1) {
-                pos1++;
-            }
-            System.out.println("Position 1: " + pos1);
-        }
-            return pos1;
 
 
-    }
-    public int determineWin2(){
-        while(pos2!=10) {
-            int dice = randNum();
-            int dice2 = randNum();
-            System.out.println("Dice: " + dice);
-            System.out.println("Dice2: " + dice);
-            if (dice + dice2 == pos2||dice==pos2||dice2==pos2) {
-                pos2++;
-            }
-            System.out.println("Position 2: " + pos2);
-        }
-        return pos2;
-    }*/
     public void endGame(){
         if(pos1==10){
             System.out.println( "player 1 wins!");
