@@ -54,11 +54,11 @@ public class FinishLine {
     public void endGame(){
         if(pos1==10){
             System.out.println( "player 1 wins!");
-            //System.exit(0);
+
         }
         if(pos2==10){
             System.out.println("player 2 wins!");
-            //System.exit(0);
+
         }
 
     }
